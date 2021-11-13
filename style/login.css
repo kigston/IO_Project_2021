@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+	background-color: #030328;
+}
+
+.logotyp {
+    width: 200px;
+}
+
+.login{
+    margin: 0 auto;
+    width: 310px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 30px 70px 143px 70px;
+}
