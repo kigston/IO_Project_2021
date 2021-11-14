@@ -27,5 +27,17 @@ header {
 .logotyp {
     width: 150px;
     padding-left: 18px;
-    padding-top: 8px;
+    padding-top: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+#sub-header {
+    position: relative;
+}
+
+.baner {
+    padding-top: 50px;
 }
