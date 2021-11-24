@@ -1,7 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    background: url("../img/background_login.jpg") no-repeat center center fixed; 
 	background-color: #030328;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	font-family: 'Gilroy-light';
 }
 
