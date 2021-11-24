@@ -62,3 +62,34 @@ body{
     overflow: hidden;
 	width: 100%;
 }
+
+.btn_purple:hover {
+    background-position: 1% 50%;
+    transition: all 0.5s !important;
+    border: 2px solid #c600ff;
+    color: #fff;
+	cursor: pointer;
+}
+
+.remember-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.ukryty {
+	visibility:hidden;
+}
+
+.color_text{
+    color: #b3b3b3;
+}
+
+.without-login a{
+    text-decoration: none;
+}
+
+.without-login a:hover{
+    text-decoration: underline;
+}
