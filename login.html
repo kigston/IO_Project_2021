@@ -16,11 +16,17 @@
 			<center><h1><img src="img/logo.png" class="logotyp"></h1></center>
 			</br>
                 <div class="input-text">
-                    <input type="text" id="inputEmail" name="email" placeholder="Adres e-mail" />
+                    <input type="text" id="inputEmail" name="email" placeholder="Adres e-mail" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningEmail">
+                        Proszę wprowadzić poprawny adres e-mail.
+                    </div> 
                 </div>
                 
                 <div class="input-text">
-                    <input type="password" id="inputPassword" name="password" placeholder="Hasło" />
+                    <input type="password" id="inputPassword" name="password" placeholder="Hasło" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningPassword">
+                        Twoje hasło musi zawierać od 4 do 60 znaków.
+                    </div> 
                 </div>
                 
                 <div>

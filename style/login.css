@@ -98,3 +98,11 @@ body{
 .without-login a:hover{
     text-decoration: underline;
 }
+
+.warning-input{
+    display: none;
+    color:#f00;
+    margin-top: 0;
+    font-size: 0.8rem;
+    margin-top: 6px;
+}
