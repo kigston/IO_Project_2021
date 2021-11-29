@@ -3,8 +3,10 @@ html, body {
     padding: 0;
     margin:0;
 }
-body {
-    background-color: #030328;
+
+@font-face {
+    font-family: gilroy;
+    src: url("../fontes/Gilroy/Gilroy-ExtraBold.otf");
 }
 
 header {
@@ -24,10 +26,61 @@ header {
     height: 50px;
 }
 
-.logotyp {
+.container--img-naglowek {
+    padding-left: 25px;
+}
+
+.img-naglowek {
     width: 150px;
     padding-left: 18px;
-    padding-top: 12px;
+}
+
+body {
+    font-family: gilroy;
+    background-color: #030328;
+}
+
+.container-login {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    color: #DCDCDC;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+
+.login {
+    padding-left: 40px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+
+.zaloguj {
+    background-color: #b535f6;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 30px;
+    background: linear-gradient(345deg, rgba(73,12,176,1) 0%, rgba(155,52,239,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+    letter-spacing: .2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .8em 1.6em .8em;
+    border: 2px solid transparent;
+    overflow: hidden;
+    width: 100%;
+    text-decoration: none;
+}
+
+.zaloguj:hover {
+    background-position: 1% 50%;
+    transition: all 0.5s !important;
+    border: 2px solid #c600ff;
+    color: #fff;
+    cursor: pointer;
 }
 
 img {
@@ -38,6 +91,64 @@ img {
     position: relative;
 }
 
-.baner {
+.baner-subheader {
     padding-top: 50px;
+}
+
+
+.img-subheader a.zaloguj {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 4px 30px;
+    letter-spacing: .1em;
+}
+
+
+h3, h4, h5, p , a{
+    color:#ffffff;
+}
+
+.text-video {
+    text-align: center;
+    font-size: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex: 0.8;
+}
+
+#container-video {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    background: #191970;
+}
+
+.prezentacja-video {
+    border: 2px solid transparent;
+    border-color: rgba(154,53,239,0.5);
+    height: 265px;
+    margin-top: -25px;
+    padding: 15px;
+}
+
+#container-video > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;;
+    max-width: 1500px;
+    margin: auto;
+    height: 240px;
+}
+
+#container-video div h3 {
+    margin:10px;
+    font-size: 2.7rem;
+}
+
+#container-video div p {
+    margin:0;
+    font-size: 1.6rem;
 }
