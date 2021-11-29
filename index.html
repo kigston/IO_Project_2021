@@ -5,20 +5,56 @@
         <link rel="stylesheet" href="style/style.css">
         <title>VideoMAX</title>
     </head>
+
     <body>
+
         <header>
-            <div id="nagłowek">
-                <div class="logo">
-                    <img src="img/logo.png" class="logotyp">
+            <div id="naglowek">
+                <div class="container-img-naglowek">
+                    <img src="img/logo.png" class="img-naglowek">
+                </div>
+
+                <div class="container-login-rejestracja">
+                    <div class="container-login">
+
+                        <div class="login">
+                            <a href= "login.html" class="zaloguj">
+                                Zaloguj się
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </header>
 
+
+
         <div id="sub-header">
             <div class="baner">
-                <img src="img/baner.png"   alt="sub-header">
-            </div>
+                 <img src="img/baner.png"   alt="sub-header">
+            </div>           
         </div>
-    </body>
 
+
+
+        <div id="container-video">
+            <div>
+                <div class="prezentacja-video">
+                    <video width="500px" poster="img/background_video.jpg" controls>
+                        <source src="video/prezentacja.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="text-video">
+                    <h3> Rozrywka w pełnej okazałości</h3>
+                    <p>
+                        Ciesz się ulubionymi filmami i serialami, treściami dla dzieci i nie tylko.
+                    </p>
+                </div>
+
+            </div>    
+         </div>
+         
+   </body>
 </html>
