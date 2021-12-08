@@ -19,7 +19,7 @@ body{
     width: 310px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
-    padding: 30px 70px 143px 70px;
+    padding: 30px 70px 0px 70px;
 }
 
 .login h1 {
@@ -105,4 +105,14 @@ body{
     margin-top: 0;
     font-size: 0.8rem;
     margin-top: 6px;
+}
+
+.social {
+
+	padding: 50px 20px 55px 20px;
+    text-align: center;
+}
+
+.social img {
+	padding:1rem;
 }
