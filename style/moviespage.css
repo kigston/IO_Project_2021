@@ -1,0 +1,42 @@
+html, body {
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url("../fontes/Gilroy/Gilroy-ExtraBold.otf");
+}
+
+header {
+    max-height: 50px;
+    background: rgba(0,0,0,.4);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999
+}
+
+#naglowek {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.container-img-naglowek {
+    width:100%;
+}
+
+.img-naglowek {
+    width: 180px;
+    margin:0 auto;
+    display:block;
+}
+
+body {
+    font-family: gilroy;
+    background-color: #030328;
+}
