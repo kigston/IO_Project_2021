@@ -152,3 +152,36 @@ h3, h4, h5, p , a{
     margin:0;
     font-size: 1.6rem;
 }
+
+
+
+
+#carousel {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#carousel div {
+    width: 100%;
+}
+
+#carousel div h3 {
+    font-size: 30px;
+}
+
+#carousel .img-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#carousel div img {
+    max-width: 250px;
+}
+
+#carousel div p {
+    color: gray;
+}
