@@ -104,8 +104,15 @@ img {
 }
 
 
-h3, h4, h5, p , a{
+h1, h2, h3, h4, h5, p , a{
     color:#ffffff;
+}
+
+h1{
+    font-size: 40px;
+}
+h3{
+    font-size: 25px;
 }
 
 .text-video {
@@ -184,4 +191,54 @@ h3, h4, h5, p , a{
 
 #carousel div p {
     color: gray;
+}
+
+
+
+
+
+#box3 {
+    padding-top: 50px;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#box3 div h4 {
+    font-size: 33px;
+}
+
+#box3 .sub-container3 div {
+    display: flex;
+    align-items: center;
+}
+
+#box3 .sub-container3 div h5 {
+    font-size: 40px;
+    width: 100%;;
+}
+
+
+
+
+
+
+
+
+#box4 {
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+    background: url("../img/Background-promo.png");
+}
+
+
+.sub-container-box4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
 }
