@@ -115,14 +115,11 @@ h3{
     font-size: 25px;
 }
 
-.text-video {
-    text-align: center;
-    font-size: 30px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    flex: 0.8;
-}
+
+
+
+ /* ---------------------------- */
+
 
 #container-video {
     display: flex;
@@ -132,6 +129,16 @@ h3{
     margin-top: 50px;
     background: #191970;
 }
+
+.text-video {
+    text-align: center;
+    font-size: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex: 0.8;
+}
+
 
 .prezentacja-video {
     border: 2px solid transparent;
@@ -161,6 +168,7 @@ h3{
 }
 
 
+ /* ---------------------------- */
 
 
 #carousel {
@@ -195,7 +203,8 @@ h3{
 
 
 
-
+ /* ---------------------------- */
+ 
 
 #box3 {
     padding-top: 50px;
@@ -221,10 +230,7 @@ h3{
 }
 
 
-
-
-
-
+ /* ---------------------------- */
 
 
 #box4 {
@@ -241,4 +247,106 @@ h3{
     flex-direction: column;
     align-items: center;
     margin-top: 35px;
+}
+
+
+ /* ---------------------------- */
+
+
+
+#box5 {
+    margin: auto;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.container-series {
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.series {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 630px;
+}
+
+.lista-series {
+    flex: 0 0 200px;
+}
+
+#box5 .series .lista-series img {
+    border: 1px solid #5b1ce6;
+    border-radius: .3rem;
+    box-shadow: 30px 30px 60px rgb(255 0 100 / 20%), -30px -30px 60px rgb(0 100 255 / 20%);
+    background-image: radial-gradient( rgba( 91, 28, 230, .5));
+}
+
+.napis5 {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#box5 .container-series .napis5 p {
+    font-size: 30px;
+}
+
+#box5 .container-series .napis5 .assista {
+    font-size: 30px;
+    letter-spacing: 5px;
+    border: 5px solid #ffffff;
+    background: #ffffff;
+    color: #000000;
+    padding: 5px 20px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+
+ /* ---------------------------- */
+
+
+#box6 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#box6 .sub-container-disp {
+    max-width: 1600px;
+    width: 100%;
+}
+
+#box6 .sub-container-disp .container-disp {
+    text-align: center;
+}
+
+#box6 .sub-container-disp .container-disp h3 {
+    font-size: 30px;
+}
+
+#box6 .sub-container-disp .container-disp p {
+    margin-top: -15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#box6 .sub-container-disp .disp {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#box6 .sub-container-disp .disp .lista-disp {
+    font-size: 25px;
 }
