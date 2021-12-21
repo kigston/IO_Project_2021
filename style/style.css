@@ -87,21 +87,72 @@ img {
     width: 100%;
 }
 
+
+
+
+/* ----------------------------------*/
+
 #sub-header {
     position: relative;
 }
 
-.baner-subheader {
+.baner {
     padding-top: 50px;
 }
 
-
-.img-subheader a.zaloguj {
-    font-size: 30px;
-    margin-bottom: 20px;
-    padding: 4px 30px;
-    letter-spacing: .1em;
+.img-subheader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 80%;
+    padding-right: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.img-subheader div {
+  
+    text-align: center;
+    font-size: 35px;
+}
+
+.img-subheader div h1 {
+    font-size: 60px;
+}
+
+.register {
+    background-color: #b535f6;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 30px;
+    background: linear-gradient(345deg, rgba(73,12,176,1) 0%, rgba(155,52,239,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+    letter-spacing: .2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .8em 1.6em .8em;
+    border: 2px solid transparent;
+    overflow: hidden;
+    width: 100%;
+    text-decoration: none;
+}
+
+.register:hover {
+    background-position: 1% 50%;
+    transition: all 0.5s !important;
+    border: 2px solid #c600ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ----------------------------------*/
+
+
+
 
 
 h1, h2, h3, h4, h5, p , a{
@@ -349,4 +400,71 @@ h3{
 
 #box6 .sub-container-disp .disp .lista-disp {
     font-size: 25px;
+}
+
+
+/* ---------------------------- */
+
+
+footer {
+    max-width: 1550px;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+footer h6, footer p {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+footer .box7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+footer .box7 .container-box7 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+footer .box7 a {
+    color: #9e86ff;
+    letter-spacing: .05em;
+}
+
+footer .box7 p {
+    color: #9e86ff;
+    letter-spacing: .05em;
+}
+
+footer .box7 .container-box7 a {
+    text-transform: uppercase;
+}
+
+footer .box7 .terms {
+    font-size: 10px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+footer .box7 .law {
+    font-size: 13px;
+}
+
+footer .box7 .social_media {
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 30px;
 }
