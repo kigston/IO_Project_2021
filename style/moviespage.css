@@ -54,6 +54,41 @@ header .navbar ul li.menu-item a { font-size: 16px; font-weight: 700; position: 
 .more-menu.show { opacity: 1; transform: translate(0, 0); visibility: visible; }
 header .navbar ul li:last-child { margin-right: 0; }
 
+/*--------------------------------------------------------------
+                       Main Slider
+--------------------------------------------------------------*/
+#home-slider ul.slick-dots { bottom: 30px; }
+#home-slider .slick-dots li { height: auto; width: auto; }
+#home-slider .slick-dots li button { height: 2px; width: 30px; background: rgba(229, 9, 20, 0.4); padding: 0; }
+#home-slider .slick-dots li.slick-active button { background: var(--iq-primary); }
+#home-slider li { position: relative; }
+.slider-description { position: absolute; top: 15%; left: 80px; }
+#home-slider h1.slider-text { font-size: 80px; margin: 15px 0; }
+#home-slider p { margin: 20px 0; width: 600px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+#home-slider .slick-bg { padding: 100px 0 50px;width:100%; background-size: cover;background-position: center center; background-repeat: no-repeat; height: 100vh; position: relative; z-index: 1;}
+#home-slider .slick-bg.s-bg-1 { background-image: url(); }
+#home-slider .slick-bg.s-bg-2 { background-image: url(); }
+#home-slider .slick-bg.s-bg-3 { background-image: url(); }
+.trailor-video { position: absolute; bottom: 0; right: 0; z-index: 999;text-align: center; }
+
+
+/* .trailor-video {
+    margin: 0 auto;
+    text-align: center;
+} */
+.channel-name { color: var(--iq-primary); font-size: 20px; margin-left: 10px; letter-spacing: 2.5px; font-weight: 500; }
+.c-logo { width: 130px; }
+.channel-logo { background: transparent linear-gradient(270deg, rgba(11, 1, 2, 0) 0%, rgba(153,30,235,1) 100%); padding: 10px 10px 10px 15px; width: 255px; position: relative; overflow: hidden; }
+.circle { stroke: var(--iq-primary); stroke-dasharray: 650; stroke-dashoffset: 650; -webkit-transition: all 0.5s ease-in-out; opacity: 0.3; }
+.playbtn { display: inline-block; -webkit-transition: all 0.5s ease; }
+.playbtn .triangle { -webkit-transition: all 0.7s ease-in-out; stroke-dasharray: 240; stroke-dashoffset: 480; stroke: var(--iq-white); transform: translateY(0); }
+.playbtn:hover .triangle { stroke-dashoffset: 0; opacity: 1; stroke: var(--iq-primary); animation: trailorPlay 0.7s ease-in-out; }
+.playbtn:hover .circle { stroke-dashoffset: 0; opacity: 1; }
+.w-trailor { font-size: 17px; letter-spacing: 3.5px; font-weight: 600; color: var(--iq-white); margin-left: 5px; }
+.slider-inner{position: relative;overflow: hidden;width: 100%;}
+.big-title { background: url('../img/texure.jpg'); background-repeat: repeat-x; background-position: 100% 100%; color: transparent; -webkit-font-smoothing: antialiased; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.slick-track{margin:unset!important;}
+
 /*Animation*/
 @keyframes slide-down {
 	0% { opacity: 0; transform: translateY(100%); }
