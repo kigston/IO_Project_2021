@@ -1,4 +1,4 @@
-/*------------------------------------------------
+/*-----------------------------------------------
 Index Of Script
 ----------------------------------------------*/
 
@@ -37,6 +37,22 @@ Index Of Script
 
 			});
 		});
+		
+		/*---------------------------------------------------------------------
+			Back to Top
+		---------------------------------------------------------------------*/
+		var btn = $('#back-to-top');
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 50) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+		btn.on('click', function (e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: 0 }, '300');
+		});
 
 		/*---------------------------------------------------------------------
 			Header Menu Dropdown
@@ -74,7 +90,7 @@ Index Of Script
 			}
 		});
 
-	/*---------------------------------------------------------------------
+		/*---------------------------------------------------------------------
 			Slick Slider
 		----------------------------------------------------------------------- */
 		$('#home-slider').slick({
@@ -334,6 +350,37 @@ Index Of Script
 			]
 		});
 
+		/*---------------------------------------------------------------------
+			Owl Carousel
+		----------------------------------------------------------------------- */
+		jQuery('.episodes-slider1').owlCarousel({
+			loop:true,
+			margin:20,
+			nav:true,
+			navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
+			dots:false,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				1000:{
+					items:4
+				}
+			}
+		});
+		
+		/*---------------------------------------------------------------------
+			Page Loader
+		----------------------------------------------------------------------- */
+		jQuery("#load").fadeOut();
+		jQuery("#loading").delay(0).fadeOut("slow");
+		
+		jQuery('.widget .fa.fa-angle-down, #main .fa.fa-angle-down').on('click', function () {
+			jQuery(this).next('.children, .sub-menu').slideToggle();
+		});
 
 		/*---------------------------------------------------------------------
 		Mobile Menu Overlay
@@ -349,7 +396,128 @@ Index Of Script
 			jQuery('body').addClass('nav-open');
 		}); 
 
+		/*---------------------------------------------------------------------
+		  Equal Height of Tab Pane
+		-----------------------------------------------------------------------*/		
+		jQuery('.trending-content').each(function () {			
+			var highestBox = 0;			
+			jQuery('.tab-pane', this).each(function () {				
+				if (jQuery(this).height() > highestBox) {
+					highestBox = jQuery(this).height();
+				}
+			});			 
+			jQuery('.tab-pane', this).height(highestBox);
+		}); 
+
+		/*---------------------------------------------------------------------
+	 		Active Class for Pricing Table
+  	 	-----------------------------------------------------------------------*/
+		jQuery("#my-table tr th").on("click", function (){
+			jQuery('#my-table tr th').children().removeClass('active');
+			jQuery(this).children().addClass('active');
+			jQuery("#my-table td").each(function () {
+				if (jQuery(this).hasClass('active')) {
+					jQuery(this).removeClass('active')
+				}
+			});
+			var col = jQuery(this).index();
+			jQuery("#my-table tr td:nth-child(" + parseInt(col + 1) + ")").addClass('active');
+		});
+		
+		/*---------------------------------------------------------------------
+			Select 2 Dropdown
+		-----------------------------------------------------------------------*/
+		if (jQuery('select').hasClass('season-select')){
+			jQuery('select').select2({
+				theme: 'bootstrap4',
+				allowClear: false,
+				width: 'resolve'
+			});
+		}
+		if (jQuery('select').hasClass('pro-dropdown')) {			
+			jQuery('.pro-dropdown').select2({
+				theme: 'bootstrap4',			
+				minimumResultsForSearch: Infinity,			
+				width: 'resolve'
+			});	
+			jQuery('#lang').select2({
+				theme: 'bootstrap4',
+				placeholder: 'Language Preference',
+				allowClear: true,
+				width: 'resolve'
+			});
+		}
+
+		/*---------------------------------------------------------------------
+			Video popup
+		-----------------------------------------------------------------------*/
+		jQuery('.video-open').magnificPopup({
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false,
+			iframe: {
+				markup: '<div class="mfp-iframe-scaler">' +
+					'<div class="mfp-close"></div>' +
+					'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+					'</div>',
+
+				srcAction: 'iframe_src',
+			}
+		});
+
+		/*---------------------------------------------------------------------
+			Flatpicker
+		-----------------------------------------------------------------------*/
+		if (jQuery('.date-input').hasClass('basicFlatpickr')) {
+			jQuery('.basicFlatpickr').flatpickr();
+		}
+		/*---------------------------------------------------------------------
+			Custom File Uploader
+		-----------------------------------------------------------------------*/
+		jQuery(".file-upload").on("change", function () {
+			! function (e) {
+				if (e.files && e.files[0]) {
+					var t = new FileReader;
+					t.onload = function (e) {
+						jQuery(".profile-pic").attr("src", e.target.result)
+					}, t.readAsDataURL(e.files[0])
+				}
+			}(this)
+		}), jQuery(".upload-button").on("click", function () {
+			jQuery(".file-upload").click();
+		});
+		// new WOW().init();
+		// var swiper = new Swiper('.swiper-container', {
+		// 	effect: 'fade',
+		// 	grabCursor: true,
+		// 	centeredSlides: false,
+		// 	slidesPerView: 'auto',
+		// 	freeMode: true,
+		// 	loop: true,
+		// 	parallax: true,
+		// 	on: {
+		// 		slideChangeTransitionEnd: function () {
+		// 			$('.aos-slide').show(0);
+		// 			AOS.init();
+		// 		},
+		// 		slideChangeTransitionStart: function () {
+		// 			$('.aos-slide').hide(0);
+		// 			$('.aos-slide').removeClass('aos-init').removeClass('aos-animate');
+					
+		// 		},
+		// 	},
+		// 	pagination: {
+		// 		el: '.swiper-pagination',
+		// 	},
+		// 	navigation: {
+		// 		nextEl: '.swiper-button-next',
+		// 		prevEl: '.swiper-button-prev',
+		// 	},
+		// });
 	
+		// AOS.init();	
 
 	});
 })(jQuery);
