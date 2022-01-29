@@ -181,3 +181,23 @@ jan.sendMessage("Jakies nowe seriale?"); // wiadomość grupowa
 kamil.sendMessage("Hej, prywatnie mogę Ci polecić Wiedzmina", jan);
 aga.sendMessage("Nuda straszna");
 piotr.sendMessage("Aga, chyba nie ten kanał.", aga); // wiadomość prywatna
+
+
+
+//Constructor design pattern
+
+class Serial {
+	constructor(tytul, cena, ilosc_odcinkow, wiek) {
+    	this.tytul = tytul;
+    	this.cena = cena;
+		this.ilosc_odcinkow = ilosc_odcinkow;
+	 	this.wiek = wiek;
+
+    }
+	writeBio(){
+      	return `Serial ${this.tytul} kosztuje ${this.cena} i ma ${this.ilosc_odcinkow} odcinków. (PEGI: +${this.wiek}) `
+	}
+}
+const Wiedzmin  = new Serial('Wiedzmin', '19.99', '16', '18');
+
+console.log(Wiedzmin.writeBio());
