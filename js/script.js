@@ -42,3 +42,56 @@ const validateEmail = email => {
     return re.test(String(email).toLowerCase());
 }
 
+//Factory Method-ceny-filmow
+class SimpleMovie{
+    constructor(name){
+        this.name = name
+        this.cost = 20
+    }
+}
+
+class StandardMovie{
+    constructor(name){
+        this.name = name
+        this.cost = 35
+    }
+}
+
+class PremiumMovie{
+    constructor(name){
+        this.name = name
+        this.cost = 50
+    }
+}
+
+class MoviesFactory {
+
+    static list = {
+        simple: SimpleMovie,
+        standard: StandardMovie,
+        premium: PremiumMovie
+    }
+
+    create(name, type='simple'){
+        const Movies = MoviesFactory.list[type] || MoviesFactory.list.simple
+        const movie = new Movies(name)
+        movie.type = type
+        movie.define = function() {
+            console.log(`${this.name} (${this.type}): ${this.cost}`)
+        }
+
+        return movie
+    }
+}
+
+const factory = new MoviesFactory()
+
+const newmovies = [
+    factory.create('Shrek', 'simple'),
+    factory.create('Matrix', 'premium'),
+    factory.create('Piraci z karaibów', 'standard'),
+    factory.create('Mission impossible', 'premium'),
+    factory.create('Smerfy')
+]
+
+newmovies.forEach( m => { m.define()})
