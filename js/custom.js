@@ -442,7 +442,7 @@ Index Of Script
 			});	
 			jQuery('#lang').select2({
 				theme: 'bootstrap4',
-				placeholder: 'Language Preference',
+				placeholder: 'Preferowany język',
 				allowClear: true,
 				width: 'resolve'
 			});
