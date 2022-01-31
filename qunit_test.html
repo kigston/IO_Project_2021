@@ -11,4 +11,23 @@
 
 <script>
 
+    QUnit.module('add', function() {
+    QUnit.test('add 2 numbers', function(assert) {
+      assert.equal(add(2, 1), 3);
+	  assert.equal(add(1, 2), 3);
+	  assert.equal(add(1.5, 1.5), 3);
+
+    });
+  });
+
+    QUnit.module('ban', function() {
+    QUnit.test('info ban', function(assert) {
+      assert.equal(ban('Adam123', 'Korzystanie z VPN'), 'Użytkownik Adam123 został zbanowany! (Powód: Korzystanie z VPN)');
+	  assert.equal(ban('Piotreq', 'Obraza administracji na czacie'), 'Użytkownik Piotreq został zbanowany! (Powód: Obraza administracji na czacie)');
+	  assert.equal(ban('Miłosz32', 'Scam'), 'Użytkownik Miłosz32 został zbanowany! (Powód: Scam)');
+
+    });
+  });
+  
+  
 </script>
