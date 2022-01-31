@@ -201,3 +201,15 @@ class Serial {
 const Wiedzmin  = new Serial('Wiedzmin', '19.99', '16', '18');
 
 console.log(Wiedzmin.writeBio());
+
+
+ //test fucntion
+  function add(a, b) {
+    return a + b;
+  }
+  
+  //funkcja wyswietlajaca informacje o zablokowanym uzytkoniku
+  
+  function ban(nick, reason) {
+          return `Użytkownik ${nick} został zbanowany! (Powód: ${reason})`
+    }
