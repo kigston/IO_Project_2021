@@ -512,3 +512,59 @@ video { display: block; width: 100%; height: 100%; }
 	70% { transform: translateX(-2px); }
 	100% { transform: translateX(0); }
 }
+/*---------------------------------------------------------------------
+                      Footer
+-----------------------------------------------------------------------*/
+footer {
+    max-width: 1550px;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+footer h6, footer p {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+footer .box7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+footer .box7 .container-box7 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+footer .box7 a {
+    color: #9e86ff;
+    letter-spacing: .05em;
+}
+footer .box7 p {
+    color: #9e86ff;
+    letter-spacing: .05em;
+}
+footer .box7 .container-box7 a {
+    text-transform: uppercase;
+}
+footer .box7 .terms {
+    font-size: 10px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+footer .box7 .law {
+    font-size: 13px;
+}
+footer .box7 .social_media {
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 30px;
+}
